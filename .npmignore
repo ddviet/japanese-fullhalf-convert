@@ -1,0 +1,32 @@
+# Development files
+.git/
+.gitignore
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test files
+test.js
+tests/
+*.test.js
+*.spec.js
+
+# Documentation (optional - keep README.md)
+# README.md
+
+# Development configs
+.eslintrc*
+.prettierrc*
+.editorconfig
+
+# CI/CD
+.github/
+.travis.yml
+.circleci/
+
+# OS files
+.DS_Store
+Thumbs.db
+

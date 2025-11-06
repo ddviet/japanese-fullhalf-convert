@@ -1,0 +1,35 @@
+{
+  "name": "japanese-fullhalf-convert",
+  "version": "1.0.1",
+  "description": "Convert Japanese characters between full-width (全角) and half-width (半角) including Katakana, numbers, and punctuation",
+  "main": "index.js",
+  "browser": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "node test.js",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "japanese",
+    "full-width",
+    "half-width",
+    "zenkaku",
+    "hankaku",
+    "katakana",
+    "converter",
+    "text-processing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ddviet/japanese-fullhalf-convert"
+  },
+  "bugs": {
+    "url": "https://github.com/ddviet/japanese-fullhalf-convert/issues"
+  },
+  "homepage": "https://github.com/ddviet/japanese-fullhalf-convert"
+}
+

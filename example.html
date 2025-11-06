@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>japanese-fullhalf-convert Example</title>
+</head>
+<body>
+    <h1>japanese-fullhalf-convert Example</h1>
+    
+    <h2>Method 1: Using CDN (unpkg)</h2>
+    <div>
+        <label>Full-width input:</label>
+        <input type="text" id="input1" value="カタカナ１２３" />
+        <button onclick="convert1()">Convert to Half-width</button>
+        <p>Result: <span id="result1"></span></p>
+    </div>
+
+    <h2>Method 2: Using CDN (jsdelivr)</h2>
+    <div>
+        <label>Half-width input:</label>
+        <input type="text" id="input2" value="ｶﾀｶﾅ123" />
+        <button onclick="convert2()">Convert to Full-width</button>
+        <p>Result: <span id="result2"></span></p>
+    </div>
+
+    <!-- Method 1: unpkg CDN -->
+    <script src="https://unpkg.com/japanese-fullhalf-convert@latest/index.js"></script>
+    
+    <!-- Method 2: jsdelivr CDN (alternative) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/japanese-fullhalf-convert@latest/index.js"></script> -->
+    
+    <script>
+        function convert1() {
+            const input = document.getElementById('input1').value;
+            const result = window.jpFullhalfConvert.toHalfWidth(input);
+            document.getElementById('result1').textContent = result;
+        }
+
+        function convert2() {
+            const input = document.getElementById('input2').value;
+            const result = window.jpFullhalfConvert.toFullWidth(input);
+            document.getElementById('result2').textContent = result;
+        }
+
+        // Test on page load
+        console.log('Available functions:', window.jpFullhalfConvert);
+        console.log('Test:', window.jpFullhalfConvert.toHalfWidth('カタカナ'));
+    </script>
+</body>
+</html>
+
