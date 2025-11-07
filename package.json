@@ -3,9 +3,11 @@
   "version": "1.0.1",
   "description": "Convert Japanese characters between full-width (全角) and half-width (半角) including Katakana, numbers, and punctuation",
   "main": "index.js",
+  "types": "index.d.ts",
   "browser": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "scripts": {
     "test": "node test.js",
